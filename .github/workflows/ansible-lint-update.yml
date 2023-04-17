@@ -16,5 +16,5 @@ jobs:
         # replace `main` with any valid ref, or tags like `v6`
         uses: ansible/ansible-lint-action@v6.14.4
         # optional:
-        with:
-          path: "-cansible-lint"  # <-- only one value is allowed
+        # with:
+        #  path: ""  # <-- only one value is allowed
