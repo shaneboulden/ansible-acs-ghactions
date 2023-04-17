@@ -4,8 +4,8 @@
 
   tasks:
 
-  - name: Get policies from ACS
-    vars:
-      dest_path: 'acs-policy-files/'
-    include_tasks:
-      file: tasks/get_policies.yml
+    - name: Get policies from ACS
+      vars:
+        dest_path: 'acs-policy-files/'
+      ansible.builtin.include_tasks:
+        file: tasks/get_policies.yml
