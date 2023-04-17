@@ -17,4 +17,4 @@ jobs:
         uses: ansible/ansible-lint-action@v6.14.4
         # optional:
         with:
-          path: "-c .ansible-lint"  # <-- only one value is allowed
+          path: "-c.ansible-lint"  # <-- only one value is allowed
