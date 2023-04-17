@@ -13,6 +13,6 @@
 
   - name: Get policies from ACS
     vars:
-      dest_path: '../acs-policy-files'
+      dest_path: 'acs-policy-files/'
     include_tasks:
       file: tasks/get_policies.yml

@@ -13,7 +13,7 @@
 
     - name: Find all policy files
       find:
-        paths: ../acs-policy-files/
+        paths: acs-policy-files/
         file_type: file
         patterns: "*.json"
       register: desired_policies
