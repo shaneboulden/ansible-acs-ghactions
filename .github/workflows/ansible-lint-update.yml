@@ -3,7 +3,7 @@ on: [push, pull_request]
 
 jobs:
   build:
-    name: Ansible Lint and Update # Naming the build is important to use it as a status check
+    name: Ansible Lint # Naming the build is important to use it as a status check
     runs-on: ubuntu-latest
 
     steps:
@@ -18,3 +18,15 @@ jobs:
         # optional:
         # with:
         #  path: ""  # <-- only one value is allowed
+    
+  deployment:
+    name: Update policies 
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Call Ansible webhook
+        uses: distributhor/workflow-webhook@v3
+        env:
+          webhook_url: ${{ secrets.WEBHOOK_URL }}
+          webhook_secret: ${{ secrets.WEBHOOK_SECRET }}
+
