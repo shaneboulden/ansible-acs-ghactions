@@ -1,12 +1,12 @@
 {
-    "id": "3e546913-de60-445c-a6d5-e70ac4ed4e98",
-    "name": "Remote File Copy Binary Execution",
-    "description": "Alert on deployments that execute a remote file copy tool",
-    "rationale": "Remote copy tools can be used to exfiltrate data from a container",
-    "remediation": "Remove tools like scp, sshfs, ssh-copy-id, etc. from your image and redeploy it",
+    "id": "8b15f352-ddec-4ba4-b56a-c47b8b6f8c17",
+    "name": "Polkit Execution Detected",
+    "description": "Detects execution of the pkexec binary in a container",
+    "rationale": "Polkit can be abused by attackers to elevate privileges within a container.",
+    "remediation": "Use your package manager's \"remove\" command to remove polkit and packages from the image build for production containers.",
     "disabled": false,
     "categories": [
-        "Network Tools"
+        "Security Best Practices"
     ],
     "fields": null,
     "lifecycleStages": [
@@ -19,7 +19,7 @@
     "severity": "MEDIUM_SEVERITY",
     "enforcementActions": [],
     "notifiers": [],
-    "SORTName": "Remote File Copy Binary Execution",
+    "SORTName": "Polkit Execution Detected",
     "SORTLifecycleStage": "RUNTIME",
     "SORTEnforcement": false,
     "policyVersion": "1.1",
@@ -33,22 +33,15 @@
                     "negate": false,
                     "values": [
                         {
-                            "value": "scp|sshfs|ssh-copy-id|rsync"
+                            "value": "pkexec"
                         }
                     ]
                 }
             ]
         }
     ],
-    "mitreAttackVectors": [
-        {
-            "tactic": "TA0008",
-            "techniques": [
-                "T1570"
-            ]
-        }
-    ],
-    "criteriaLocked": true,
-    "mitreVectorsLocked": true,
-    "isDefault": true
+    "mitreAttackVectors": [],
+    "criteriaLocked": false,
+    "mitreVectorsLocked": false,
+    "isDefault": false
 }

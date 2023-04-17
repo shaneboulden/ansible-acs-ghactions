@@ -1,9 +1,9 @@
 {
-    "id": "657f4d37-55ab-42f2-bdce-9a4b74a67328",
-    "name": "Insecure specified in CMD",
-    "description": "Alert on deployments using 'insecure' in the command",
-    "rationale": "Using insecure in a command implies accessing or providing data from a server on an unencrypted connection.",
-    "remediation": "Use a certificate manager and certificate rotation routinely to ensure secure service-to-service communication.",
+    "id": "421b462f-c805-4224-acc9-5098a622d009",
+    "name": "Polkit in Image",
+    "description": "Alert on deployments with Polkit present",
+    "rationale": "Leaving privileged administration tools like Polkit in an image potentially allows attackers to escalate privileges within the container.",
+    "remediation": "Use your package manager's \"remove\" command to remove polkit packages from the image build for production containers.",
     "disabled": false,
     "categories": [
         "Security Best Practices"
@@ -20,7 +20,7 @@
     "severity": "LOW_SEVERITY",
     "enforcementActions": [],
     "notifiers": [],
-    "SORTName": "Insecure specified in CMD",
+    "SORTName": "Polkit in Image",
     "SORTLifecycleStage": "BUILD,DEPLOY",
     "SORTEnforcement": false,
     "policyVersion": "1.1",
@@ -29,12 +29,15 @@
             "sectionName": "",
             "policyGroups": [
                 {
-                    "fieldName": "Dockerfile Line",
+                    "fieldName": "Image Component",
                     "booleanOperator": "OR",
                     "negate": false,
                     "values": [
                         {
-                            "value": "CMD=.*insecure.*"
+                            "value": "polkit="
+                        },
+                        {
+                            "value": "policykit-1="
                         }
                     ]
                 }
@@ -42,7 +45,7 @@
         }
     ],
     "mitreAttackVectors": [],
-    "criteriaLocked": true,
-    "mitreVectorsLocked": true,
-    "isDefault": true
+    "criteriaLocked": false,
+    "mitreVectorsLocked": false,
+    "isDefault": false
 }

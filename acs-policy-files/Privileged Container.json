@@ -9,10 +9,12 @@
         "Privileges",
         "Docker CIS"
     ],
+    "fields": null,
     "lifecycleStages": [
         "DEPLOY"
     ],
     "eventSource": "NOT_APPLICABLE",
+    "whitelists": [],
     "exclusions": [
         {
             "name": "Don't alert on the stackrox namespace",

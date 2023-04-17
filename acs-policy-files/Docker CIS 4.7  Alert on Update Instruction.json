@@ -8,11 +8,13 @@
     "categories": [
         "Docker CIS"
     ],
+    "fields": null,
     "lifecycleStages": [
         "BUILD",
         "DEPLOY"
     ],
     "eventSource": "NOT_APPLICABLE",
+    "whitelists": [],
     "exclusions": [
         {
             "name": "Don't alert on StackRox services",

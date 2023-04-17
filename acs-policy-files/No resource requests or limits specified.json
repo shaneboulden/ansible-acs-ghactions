@@ -9,10 +9,12 @@
         "DevOps Best Practices",
         "Docker CIS"
     ],
+    "fields": null,
     "lifecycleStages": [
         "DEPLOY"
     ],
     "eventSource": "NOT_APPLICABLE",
+    "whitelists": [],
     "exclusions": [
         {
             "name": "Don't alert on system namespaces",

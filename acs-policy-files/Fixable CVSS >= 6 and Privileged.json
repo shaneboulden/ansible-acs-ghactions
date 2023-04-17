@@ -9,10 +9,12 @@
         "Vulnerability Management",
         "Privileges"
     ],
+    "fields": null,
     "lifecycleStages": [
         "DEPLOY"
     ],
     "eventSource": "NOT_APPLICABLE",
+    "whitelists": [],
     "exclusions": [],
     "scope": [],
     "severity": "HIGH_SEVERITY",

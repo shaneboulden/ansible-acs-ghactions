@@ -8,10 +8,12 @@
     "categories": [
         "Security Best Practices"
     ],
+    "fields": null,
     "lifecycleStages": [
         "DEPLOY"
     ],
     "eventSource": "NOT_APPLICABLE",
+    "whitelists": [],
     "exclusions": [],
     "scope": [],
     "severity": "MEDIUM_SEVERITY",

@@ -9,11 +9,13 @@
         "DevOps Best Practices",
         "Docker CIS"
     ],
+    "fields": null,
     "lifecycleStages": [
         "BUILD",
         "DEPLOY"
     ],
     "eventSource": "NOT_APPLICABLE",
+    "whitelists": [],
     "exclusions": [],
     "scope": [],
     "severity": "LOW_SEVERITY",

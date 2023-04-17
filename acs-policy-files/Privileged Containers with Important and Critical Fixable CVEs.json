@@ -9,10 +9,12 @@
         "Vulnerability Management",
         "Privileges"
     ],
+    "fields": null,
     "lifecycleStages": [
         "DEPLOY"
     ],
     "eventSource": "NOT_APPLICABLE",
+    "whitelists": [],
     "exclusions": [
         {
             "name": "Don't alert on kube-system namespace",
@@ -74,7 +76,7 @@
         }
     ],
     "mitreAttackVectors": [],
-    "criteriaLocked": true,
-    "mitreVectorsLocked": true,
-    "isDefault": true
+    "criteriaLocked": false,
+    "mitreVectorsLocked": false,
+    "isDefault": false
 }

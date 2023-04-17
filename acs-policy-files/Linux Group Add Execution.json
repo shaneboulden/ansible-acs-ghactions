@@ -9,10 +9,12 @@
         "System Modification",
         "Privileges"
     ],
+    "fields": null,
     "lifecycleStages": [
         "RUNTIME"
     ],
     "eventSource": "DEPLOYMENT_EVENT",
+    "whitelists": [],
     "exclusions": [],
     "scope": [],
     "severity": "HIGH_SEVERITY",

@@ -8,10 +8,12 @@
     "categories": [
         "Package Management"
     ],
+    "fields": null,
     "lifecycleStages": [
         "RUNTIME"
     ],
     "eventSource": "DEPLOYMENT_EVENT",
+    "whitelists": [],
     "exclusions": [],
     "scope": [],
     "severity": "LOW_SEVERITY",

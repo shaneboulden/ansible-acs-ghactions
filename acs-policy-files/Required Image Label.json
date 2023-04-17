@@ -9,11 +9,13 @@
         "DevOps Best Practices",
         "Security Best Practices"
     ],
+    "fields": null,
     "lifecycleStages": [
         "BUILD",
         "DEPLOY"
     ],
     "eventSource": "NOT_APPLICABLE",
+    "whitelists": [],
     "exclusions": [
         {
             "name": "Don't alert on kube-system namespace",

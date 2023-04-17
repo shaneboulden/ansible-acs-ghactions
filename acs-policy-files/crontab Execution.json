@@ -8,10 +8,12 @@
     "categories": [
         "System Modification"
     ],
+    "fields": null,
     "lifecycleStages": [
         "RUNTIME"
     ],
     "eventSource": "DEPLOYMENT_EVENT",
+    "whitelists": [],
     "exclusions": [],
     "scope": [],
     "severity": "MEDIUM_SEVERITY",

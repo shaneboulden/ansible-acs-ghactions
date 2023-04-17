@@ -9,10 +9,12 @@
         "DevOps Best Practices",
         "Security Best Practices"
     ],
+    "fields": null,
     "lifecycleStages": [
         "RUNTIME"
     ],
     "eventSource": "DEPLOYMENT_EVENT",
+    "whitelists": [],
     "exclusions": [
         {
             "name": "Don't alert on kube-system namespace",

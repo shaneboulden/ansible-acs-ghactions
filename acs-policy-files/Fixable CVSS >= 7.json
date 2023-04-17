@@ -8,11 +8,13 @@
     "categories": [
         "Vulnerability Management"
     ],
+    "fields": null,
     "lifecycleStages": [
         "BUILD",
         "DEPLOY"
     ],
     "eventSource": "NOT_APPLICABLE",
+    "whitelists": [],
     "exclusions": [],
     "scope": [],
     "severity": "HIGH_SEVERITY",

@@ -8,11 +8,13 @@
     "categories": [
         "Security Best Practices"
     ],
+    "fields": null,
     "lifecycleStages": [
         "BUILD",
         "DEPLOY"
     ],
     "eventSource": "NOT_APPLICABLE",
+    "whitelists": [],
     "exclusions": [
         {
             "name": "Don't alert on the master-etcd deployment",

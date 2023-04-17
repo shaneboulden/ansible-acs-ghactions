@@ -8,10 +8,12 @@
     "categories": [
         "Docker CIS"
     ],
+    "fields": null,
     "lifecycleStages": [
         "BUILD"
     ],
     "eventSource": "NOT_APPLICABLE",
+    "whitelists": [],
     "exclusions": [],
     "scope": [],
     "severity": "MEDIUM_SEVERITY",
