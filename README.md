@@ -27,8 +27,7 @@ Create a new project, and replace the URL with your forked copy of this repo. En
 Create a new template in Ansible, specifying the following:
 - Inventory: Localhost (from above)
 - Project: ACS Policy as Code source (from above)
-- Playbook: playbooks/update.yml
-- Credentials: Vault (from above)
+- Playbook: update.yml
 
 Specify the ACS host and API token as template variables:
 ```
