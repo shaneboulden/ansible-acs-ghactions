@@ -1,0 +1,6 @@
+exclude_paths:
+- ./docs-images/
+- ./acs-policy-files/
+- ./vaults/*
+use_default_rules: trye
+verbosity: 1
