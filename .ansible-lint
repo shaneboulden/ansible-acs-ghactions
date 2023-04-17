@@ -1,6 +1,5 @@
 exclude_paths:
-- ./docs-images/
-- ./acs-policy-files/
-- ./vaults/*
+- docs-images/
+- acs-policy-files/
 use_default_rules: true
 verbosity: 1

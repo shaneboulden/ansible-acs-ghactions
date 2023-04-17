@@ -2,13 +2,6 @@
   hosts: localhost
   gather_facts: true
 
-  vars_files:
-  - vaults/vault.yml
-
-  vars:
-    acs_host: "{{ vaulted_acs_host }}"
-    acs_token: "{{ vaulted_acs_token }}"
-
   tasks:
 
     - name: Find all policy files
