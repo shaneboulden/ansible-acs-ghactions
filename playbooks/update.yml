@@ -3,7 +3,7 @@
   gather_facts: true
 
   vars_files:
-  - vault.yml
+  - vaults/vault.yml
 
   vars:
     acs_host: "{{ vaulted_acs_host }}"
