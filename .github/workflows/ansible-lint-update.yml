@@ -18,3 +18,4 @@ jobs:
         # optional:
         with:
           path: "playbooks/"  # <-- only one value is allowed
+          args: "--exclude playbooks/vault.yml"
