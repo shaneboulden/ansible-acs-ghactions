@@ -17,10 +17,7 @@
     "exclusions": [],
     "scope": [],
     "severity": "HIGH_SEVERITY",
-    "enforcementActions": [
-        "KILL_POD_ENFORCEMENT",
-        "FAIL_KUBE_REQUEST_ENFORCEMENT"
-    ],
+    "enforcementActions": [],
     "notifiers": [],
     "SORTName": "Shell Spawned by Java Application",
     "SORTLifecycleStage": "RUNTIME",
