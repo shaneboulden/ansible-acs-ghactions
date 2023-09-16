@@ -4,7 +4,7 @@
     "description": "Detects execution of shell (bash/csh/sh/zsh) as a subprocess of a java application",
     "rationale": "Java application launching a shell can be an indicator of remote code execution",
     "remediation": "Determine whether this is intended behavior of the application or an indication of malicious activity",
-    "disabled": true,
+    "disabled": false,
     "categories": [
         "System Modification"
     ],
